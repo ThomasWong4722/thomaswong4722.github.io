@@ -1,6 +1,6 @@
 function MissionRandomall() {
     let AllMission = []; // Initialize the array correctly
-
+    
     if (document.getElementById("checkbox1")?.checked) {
         AllMission = [...AllMission, ...missionsa]; // Append correctly
     }
@@ -26,9 +26,13 @@ function MissionRandomall() {
         const textElement = document.getElementById(`mission${index + 1}`);
         if (textElement) {
             textElement.textContent = `${MissionF.Mission}`;
+            textElement.style.backgroundColor = 'white'
             console.log(MissionF.ID)
+            
         }
+        
     });
+    
     document.getElementById("Startup").style.display = "none";
 }
 

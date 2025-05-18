@@ -70,6 +70,7 @@ for (let i = 1; i <= 6; i++) {
             const selected = AllMission[randomIndex].Mission;
             selectedMission.textContent = selected;
             document.getElementById("popupAText").textContent = selected;
+            selectedMission.style.backgroundColor = 'white'
             
             }   
             closePopupa()     

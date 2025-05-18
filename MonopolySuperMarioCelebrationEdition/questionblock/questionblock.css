@@ -45,3 +45,8 @@
         .image-co:active{
             transform: scale(0.9);
         }
+
+        .image-co:ontouchstart{
+             transform: scale(0.9);
+
+        }

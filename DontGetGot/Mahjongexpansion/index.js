@@ -12,15 +12,17 @@ let selectedMission = null; // Store the selected mission
         document.getElementById("whitebutton").addEventListener("click", function() { changeBackground('white'); });
         document.getElementById("zoombutton").addEventListener("click", function() { zoom(); });
         document.getElementById("MissionRandombutton").addEventListener("click", function() { MissionRandom(); });
-        document.getElementById("closePopupAbutton").addEventListener("click", function() { closePopup(); });
-        
+        document.getElementById("closePopupAbutton").addEventListener("click", function() { closePopupa(); });
+
+        document.getElementById("popupb").addEventListener("click", function() { closePopupb(); });
+
         function openPopup(element) {
             selectedMission = element; // Store the clicked text
             document.getElementById("popupAText").textContent = element.textContent;
             document.getElementById("popupA").style.display = "block";
         }
     
-        function closePopup() {
+        function closePopupa() {
             document.getElementById("popupA").style.display = "none";
         }
     
@@ -36,7 +38,7 @@ let selectedMission = null; // Store the selected mission
                 document.getElementById("popupb").style.display = "flex";
             }
         }
-    
+   
         function closePopupb() {
             document.getElementById("popupb").style.display = "none";
         }

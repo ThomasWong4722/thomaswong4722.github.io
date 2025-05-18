@@ -52,7 +52,7 @@ td, th {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: #2d9338;
     padding: 20px;
     border: 2px solid black;
     display: none;

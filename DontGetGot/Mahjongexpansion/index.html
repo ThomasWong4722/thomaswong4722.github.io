@@ -11,33 +11,66 @@
 
 <table>
     <tr>
-        <td colspan="2" class="center">Mahjong</td>
+        <td colspan="2" class="center" >Don't Get Got - Mahjong expansion | 打牌嗰陣斷到正</td>
     </tr>
     <tr>
         <td >1</td>
-        <td id="mission1" >text 1</td>
+        <td id="mission1" >任務 1</td>
     </tr>
     <tr>
         <td >2</td>
-        <td id="mission2"">text 2</td>
+        <td id="mission2">任務 2</td>
     </tr>
     <tr>
         <td >3</td>
-        <td id="mission3">text 3</td>
+        <td id="mission3">任務 3</td>
     </tr>
     <tr>
         <td >4</td>
-        <td id="mission4">text 4</td>
+        <td id="mission4">任務 4</td>
     </tr>
     <tr>
         <td >5</td>
-        <td id="mission5">text 5</td>
+        <td id="mission5">任務 5</td>
     </tr>
     <tr>
         <td >6</td>
-        <td id="mission6">text 6</td>
+        <td id="mission6">任務 6</td>
     </tr>
 </table>
 
+<div id="popupA" class="popupA">
+    <table>
+        <tr>
+            <td id="popupAText">Selected Mission</td>
+        </tr>
+        <tr>
+            <td id="greenbutton"><button onclick="changeBackground('green')">搞掂</button></td>
+        </tr>
+        <tr>
+            <td id="redbutton"><button onclick="changeBackground('red')">穿煲</button></td>
+        </tr>
+        <tr>
+            <td id="whitebutton"><button onclick="changeBackground('white')">取消</button></td>
+        </tr>
+        <tr>
+            <td id="zoombutton"><button onclick="zoom()">放大文字</button></td>
+        </tr>
+        <tr>
+            <td id="MissionRandombutton"><button onclick="MissionRandom()">重抽</button></td>
+        </tr>
+        <tr>
+            <td id="closePopupAbutton"><button onclick="closePopup()">返回</button></td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="popupb" class="popupb">
+    <p id="popupbText"></p>
+    <button onclick="closePopupb()">Close</button>
+</div>
+
+<script src="index.js"> </script>
 </body>
 </html>

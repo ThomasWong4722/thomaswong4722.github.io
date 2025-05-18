@@ -1,5 +1,5 @@
 body {
-    background-color: #2d9338; /* Set background color */
+    background-color: #FFF; /* Set background color */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the image horizontally */
@@ -9,8 +9,7 @@ body {
     text-align: center;
 }
 table {
-    max-width: calc(100vw - 25px); /* If portrait mode */
-    max-height: calc(100vh - 25px); /* If landscape mode */
+
     border-collapse: collapse;
     text-align: center;
     cursor:pointer;
@@ -38,6 +37,7 @@ td, th {
 .center {
     text-align: center;
     font-weight: bold;
+    background-color: #2d9338
 }
 .buttons {
     display: flex;
@@ -45,3 +45,31 @@ td, th {
     margin-top: 10px;
 }
 
+.popupA {
+
+    width: 50vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.popupb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255, 255, 255, 1);
+    color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}

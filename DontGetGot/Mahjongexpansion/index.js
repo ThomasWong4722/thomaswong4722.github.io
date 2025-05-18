@@ -33,8 +33,9 @@ for (let i = 1; i <= 6; i++) {
         function changeBackground(color) {
             if (selectedMission) {
                 selectedMission.style.backgroundColor = color; // Change original text background
-                closePopupa()
+                
             }
+            closePopupa()
         }
     
         function zoom() {
@@ -42,8 +43,9 @@ for (let i = 1; i <= 6; i++) {
                 
                 document.getElementById("popupbText").textContent = selectedMission.textContent;
                 document.getElementById("popupb").style.display = "flex";
-                closePopupa()
+                
             }
+            closePopupa()
         }
 
         function closePopupb() {
@@ -68,8 +70,9 @@ for (let i = 1; i <= 6; i++) {
             const selected = AllMission[randomIndex].Mission;
             selectedMission.textContent = selected;
             document.getElementById("popupAText").textContent = selected;
-            closePopupa()
-            }        
+            
+            }   
+            closePopupa()     
         }
         
         function start() {

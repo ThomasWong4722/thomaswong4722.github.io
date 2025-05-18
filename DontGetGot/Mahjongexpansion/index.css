@@ -76,6 +76,7 @@ td, th {
 
 .startup {
     position: fixed;
+    width: 100vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -84,4 +85,7 @@ td, th {
     border: 2px solid black;
     display: block;
     text-align: center;
+}
+.mission{
+    font-size:10px ;
 }

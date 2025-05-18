@@ -12,7 +12,8 @@ function MissionRandomall() {
     console.log(AllMission); // Now logs the correctly merged array
 
     if (AllMission.length < 6) {
-        console.error("Not enough names in the list!");
+        alert("請選擇卡牌組合")
+        console.error("請選擇卡牌組合");
         return;
     }
 
@@ -24,10 +25,11 @@ function MissionRandomall() {
     selected.forEach((MissionF, index) => {
         const textElement = document.getElementById(`mission${index + 1}`);
         if (textElement) {
-            textElement.textContent = ` ${MissionF.ID},${MissionF.Mission}`;
+            textElement.textContent = `${MissionF.Mission}`;
             console.log(MissionF.ID)
         }
     });
+    document.getElementById("Startup").style.display = "none";
 }
 
 

@@ -18,6 +18,8 @@ for (let i = 1; i <= 6; i++) {
         document.getElementById("newstart").addEventListener("click", function() { start(); });
         document.getElementById("StartReturn").addEventListener("click", function() { goBack(); });
 
+        document.getElementById("title").addEventListener("click", function() { Restart(); });
+
         function openPopup(element) {
             selectedMission = element; // Store the clicked text
             document.getElementById("popupAText").textContent = element.textContent;
@@ -36,6 +38,7 @@ for (let i = 1; i <= 6; i++) {
     
         function zoom() {
             if (selectedMission) {
+                
                 document.getElementById("popupbText").textContent = selectedMission.textContent;
                 document.getElementById("popupb").style.display = "flex";
             }
@@ -46,13 +49,28 @@ for (let i = 1; i <= 6; i++) {
         }
 
         function MissionRandom() {
-            alert("MissionRandom function executed!");
+            if (selectedMission) {
+                let AllMission = []; // Initialize the array correctly
+
+                if (document.getElementById("checkbox1")?.checked) {
+                    AllMission = [...AllMission, ...missionsa]; // Append correctly
+                    }
+
+                if (document.getElementById("checkbox2")?.checked) {
+                    AllMission = [...AllMission, ...missionsb]; // Append again if needed
+                    }
+
+                console.log(AllMission); // Now logs the correctly merged array
+
+            const randomIndex = Math.floor(Math.random() * AllMission.length);
+            const selected = AllMission[randomIndex].Mission;
+            selectedMission.textContent = selected;
+            document.getElementById("popupAText").textContent = selected;
+            }        
         }
         
         function start() {
             MissionRandomall()
-            alert("Startup completed!");
-            document.getElementById("Startup").style.display = "none";
             
         }
 
@@ -62,5 +80,9 @@ for (let i = 1; i <= 6; i++) {
         }
     
         window.onload = function() {
+            document.getElementById("Startup").style.display = "block"; // Show popup on startup
+        }
+
+        function Restart() {
             document.getElementById("Startup").style.display = "block"; // Show popup on startup
         }

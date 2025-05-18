@@ -1,0 +1,47 @@
+        body {
+            background-color: #fdd022; /* Set background color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+            height: 100vh; /* Full screen height */
+            margin: 0; /* Remove default margins */
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+            top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        img {
+            max-width: calc(100vw - 25px); /* If portrait mode */
+            max-height: calc(100vh - 65px); /* If landscape mode */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer;
+        }
+         .button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .image-co{
+            transition: transform 0.2s ease;
+        }
+
+        .image-co:active{
+            transform: scale(0.9);
+        }

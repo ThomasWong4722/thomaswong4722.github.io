@@ -50,19 +50,17 @@ for (let i = 1; i <= 6; i++) {
         }
         
         function start() {
+            MissionRandomall()
             alert("Startup completed!");
             document.getElementById("Startup").style.display = "none";
-            document.getElementById("backButton").style.display = "block"; // Show back button
+            
         }
 
         function goBack() {
             document.getElementById("Startup").style.display = "none";
-            document.getElementById("backButton").style.display = "none"; // Hide back button
+
         }
     
         window.onload = function() {
             document.getElementById("Startup").style.display = "block"; // Show popup on startup
         }
-
-
-

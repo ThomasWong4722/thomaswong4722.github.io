@@ -249,4 +249,3 @@ const missionsa = [
     }
   ];
 
-export default missionsa;

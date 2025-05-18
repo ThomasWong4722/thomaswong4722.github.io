@@ -66,7 +66,3 @@ for (let i = 1; i <= 6; i++) {
 
 
 
-import missionsa from './DataA.js'; // Import mission data
-import missionsb from './DataB.js'; // Import mission data
-        const COM=[...missionsa,...missionb];
-        console.log(COM)

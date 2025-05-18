@@ -10,7 +10,7 @@ body {
 }
 table {
     max-width: calc(100vw - 25px); /* If portrait mode */
-    max-height: calc(100vh - 65px); /* If landscape mode */
+    max-height: calc(100vh - 25px); /* If landscape mode */
     border-collapse: collapse;
     text-align: center;
     cursor: pointer;
@@ -22,7 +22,6 @@ td, th {
     padding: 20px;   /* Increase padding */
     text-align: center; /* Ensure center alignment */
     vertical-align: middle; /* Keep text centered */
-    white-space: nowrap; /* Prevent text wrapping */
     border: 5px solid #d62d15;
     color: #024593;
     background-color: white;
@@ -37,4 +36,7 @@ td, th {
     justify-content: center;
     gap: 5px;
     margin-top: 10px;
+}
+numbers{
+    padding: 10px;
 }

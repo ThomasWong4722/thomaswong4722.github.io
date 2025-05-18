@@ -13,21 +13,21 @@ table {
     max-height: calc(100vh - 25px); /* If landscape mode */
     border-collapse: collapse;
     text-align: center;
-    cursor: pointer;
+    cursor:pointer;
     width: 100%;
     height: 100vh;
 }
 
 td:first-child { 
-    width: 100px;  /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    height: 10vh;
     text-align: center;
     vertical-align: middle;
 }
 
 td, th {
-    font-size: 24px; /* Adjust the text size */
-    padding: 20px;   /* Increase padding */
+    
+    font-size: 4vh; /* Adjust the text size */
+    padding: 0;   /* Increase padding */
     text-align: center; /* Ensure center alignment */
     vertical-align: middle; /* Keep text centered */
     border: 5px solid #d62d15;
@@ -42,7 +42,6 @@ td, th {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 5px;
     margin-top: 10px;
 }
 

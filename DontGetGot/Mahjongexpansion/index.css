@@ -17,6 +17,14 @@ table {
     width: 100%;
     height: 100vh;
 }
+
+td:first-child { 
+    width: 100px;  /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    text-align: center;
+    vertical-align: middle;
+}
+
 td, th {
     font-size: 24px; /* Adjust the text size */
     padding: 20px;   /* Increase padding */
@@ -37,6 +45,4 @@ td, th {
     gap: 5px;
     margin-top: 10px;
 }
-numbers{
-    padding: 10px;
-}
+

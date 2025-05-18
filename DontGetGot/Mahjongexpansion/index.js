@@ -33,6 +33,7 @@ for (let i = 1; i <= 6; i++) {
         function changeBackground(color) {
             if (selectedMission) {
                 selectedMission.style.backgroundColor = color; // Change original text background
+                document.getElementById("popupA").style.display = "none";
             }
         }
     
@@ -41,6 +42,7 @@ for (let i = 1; i <= 6; i++) {
                 
                 document.getElementById("popupbText").textContent = selectedMission.textContent;
                 document.getElementById("popupb").style.display = "flex";
+                document.getElementById("popupA").style.display = "none";
             }
         }
 
@@ -66,6 +68,7 @@ for (let i = 1; i <= 6; i++) {
             const selected = AllMission[randomIndex].Mission;
             selectedMission.textContent = selected;
             document.getElementById("popupAText").textContent = selected;
+            document.getElementById("popupA").style.display = "none";
             }        
         }
         

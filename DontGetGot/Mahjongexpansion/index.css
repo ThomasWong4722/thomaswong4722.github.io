@@ -47,7 +47,7 @@ td, th {
 
 .popupA {
 
-    width: 50vw;
+    width: 80vw;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -87,5 +87,9 @@ td, th {
     text-align: center;
 }
 .mission{
-    font-size:10px ;
+    font-size:15px ;
+}
+
+.bu{
+    font-size:15px
 }

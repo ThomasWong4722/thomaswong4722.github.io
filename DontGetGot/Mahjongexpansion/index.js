@@ -1,11 +1,10 @@
 let selectedMission = null; // Store the selected mission
     
-        document.getElementById("mission1").addEventListener("click", function() { openPopup(this); });
-        document.getElementById("mission2").addEventListener("click", function() { openPopup(this); });
-        document.getElementById("mission3").addEventListener("click", function() { openPopup(this); });
-        document.getElementById("mission4").addEventListener("click", function() { openPopup(this); });
-        document.getElementById("mission5").addEventListener("click", function() { openPopup(this); });
-        document.getElementById("mission6").addEventListener("click", function() { openPopup(this); });
+for (let i = 1; i <= 6; i++) {
+    document.getElementById(`mission${i}`).addEventListener("click", function() {
+        openPopup(this);
+    });
+}
 
         document.getElementById("greenbutton").addEventListener("click", function() { changeBackground('green'); });
         document.getElementById("redbutton").addEventListener("click", function() { changeBackground('red'); });
@@ -15,6 +14,9 @@ let selectedMission = null; // Store the selected mission
         document.getElementById("closePopupAbutton").addEventListener("click", function() { closePopupa(); });
 
         document.getElementById("popupb").addEventListener("click", function() { closePopupb(); });
+
+        document.getElementById("newstart").addEventListener("click", function() { start(); });
+        document.getElementById("StartReturn").addEventListener("click", function() { goBack(); });
 
         function openPopup(element) {
             selectedMission = element; // Store the clicked text
@@ -38,7 +40,7 @@ let selectedMission = null; // Store the selected mission
                 document.getElementById("popupb").style.display = "flex";
             }
         }
-   
+
         function closePopupb() {
             document.getElementById("popupb").style.display = "none";
         }
@@ -46,3 +48,25 @@ let selectedMission = null; // Store the selected mission
         function MissionRandom() {
             alert("MissionRandom function executed!");
         }
+        
+        function start() {
+            alert("Startup completed!");
+            document.getElementById("Startup").style.display = "none";
+            document.getElementById("backButton").style.display = "block"; // Show back button
+        }
+
+        function goBack() {
+            document.getElementById("Startup").style.display = "none";
+            document.getElementById("backButton").style.display = "none"; // Hide back button
+        }
+    
+        window.onload = function() {
+            document.getElementById("Startup").style.display = "block"; // Show popup on startup
+        }
+
+
+
+import missionsa from './DataA.js'; // Import mission data
+import missionsb from './DataB.js'; // Import mission data
+        const COM=[...missionsa,...missionb];
+        console.log(COM)

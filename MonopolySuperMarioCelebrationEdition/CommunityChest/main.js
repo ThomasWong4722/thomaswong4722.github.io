@@ -1,3 +1,11 @@
+const preloadedImages = [];
+
+Drawlist.forEach(item => {
+    const img = new Image();
+    img.src = item.img;
+    preloadedImages.push(img);
+});
+
 const card = document.querySelector(".card__inner");
 let Fb=0
 card.addEventListener("click", function (e) {

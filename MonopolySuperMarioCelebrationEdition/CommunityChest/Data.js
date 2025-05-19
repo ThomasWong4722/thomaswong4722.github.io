@@ -1,4 +1,4 @@
-const Draw = [
+const Drawlist = [
   {"img": "./Image/1.jpg", "ac": true},
   {"img": "./Image/2.jpg", "ac": true},
   {"img": "./Image/3.jpg", "ac": true},

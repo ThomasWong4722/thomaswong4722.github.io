@@ -12,14 +12,34 @@
 	<div class="card">
 		<div class="card__inner">
 			<div class="card__face card__face--front">
-				<img src="./Image/00.jpg" alt="" />
+				<img class="card_img" src="./Image/00.jpg" alt="" />
 			</div>
 			<div class="card__face card__face--back">
-				<img id="drawedIMG" src="./Image/01.jpg" alt="" />
+				<img class="card_img" id="drawedIMG" src="./Image/01.jpg" alt="" />
 			</div>
 		</div>
 	</div>
-	<button class="button" onclick="window.location.href='../index.html';">返回</button> 
+	
+<div class="Buttonloc">
+	<table>
+		<tr>
+			<td>免費出獄證未被抽取(水管)</td>
+			<td><label class="switch">
+  				<input checked="true" id="switch1" type="checkbox">
+  				<span class="slider round"></span>
+				</label></td>
+			<td>免費出獄證未被抽取(清白)</td>	
+			<td><label class="switch">
+  				<input checked="true" id="switch2" type="checkbox">
+  				<span class="slider round"></span>
+				</label></td>
+	
+			<td><button class="button" onclick="window.location.href='../index.html';">返回</button> </td>
+		</tr>
+	</table>
+</div>
+
+
 	<script src="main.js"></script>
 </body>
 </html>

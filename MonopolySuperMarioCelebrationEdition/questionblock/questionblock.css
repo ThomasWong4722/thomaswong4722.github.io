@@ -42,10 +42,14 @@
             transition: transform 0.2s ease;
         }
 
-        .image-co:active{
+        .image-coactive{
             transform: scale(0.9);
         }
 
         .iactive{
             transform: scale(0.9);
+        }
+
+        .iinactive{
+            transform: scale(1);
         }

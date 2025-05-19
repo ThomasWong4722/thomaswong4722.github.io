@@ -1,6 +1,6 @@
 @font-face {
    font-family: myFirstFont;
-   src: url(../../File/setofont.ttf);
+   src: url(../File/setofont.ttf);
 }
 
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #FFF; /* Set background color */
+    background-color: #0e5fb3; /* Set background color */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the image horizontally */
@@ -38,69 +38,24 @@ td, th {
     padding: 0;   /* Increase padding */
     text-align: center; /* Ensure center alignment */
     vertical-align: middle; /* Keep text centered */
-    border: 5px solid #d62d15;
-    color: #024593;
-    background-color: white;
-    font-weight: bold;
+    border: 10px solid #fdd308;
+    color: white;
+    background-color: #b91413;
+
 }
 .center {
     text-align: center;
     font-weight: bold;
     background-color: #2d9338
 }
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.popupA {
+.main {
 
     width: 80vw;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #2d9338;
     padding: 20px;
-    border: 2px solid black;
-    display: none;
-}
-.hidden {
-    display: none;
-}
-.popupb {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:rgba(255, 255, 255, 1);
-    color: black;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-}
-
-.startup {
-    position: fixed;
-    width: 100vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border: 2px solid black;
-    display: block;
-    text-align: center;
-}
-.mission{
-    font-size:2vh ;
-}
-
-.bu{
-    font-size:3vh
-}
 
 
+}

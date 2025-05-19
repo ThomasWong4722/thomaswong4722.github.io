@@ -42,7 +42,7 @@
             transition: transform 0.2s ease;
         }
 
-        .image-coactive{
+        .image-co:active{
             transform: scale(0.9);
         }
 

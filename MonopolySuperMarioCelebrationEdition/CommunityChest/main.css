@@ -194,3 +194,10 @@ table {
     cursor:pointer;
 display: flex;
 }
+
+ .bco{
+     transition: transform 0.2s ease;
+ }
+ .bco:active{
+     transform: scale(0.9);
+ }

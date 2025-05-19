@@ -15,16 +15,3 @@ const sounds = ["sound/1.mp3", "sound/2.mp3", "sound/3.mp3", "sound/4.mp3", "sou
             });
         });
         
-    document.getElementById("image").addEventListener("click", handleClick);
-    document.getElementById("image").addEventListener("mouseup", handleRelease);
-
-    document.getElementById("image").addEventListener("touchstart", handleClick);
-    document.getElementById("image").addEventListener("touchend", handleRelease);
-
-function handleClick() {
-    document.getElementById('image').className = ''
-}
-
-function handleRelease() {
-    document.getElementById('image').className = ''
-}

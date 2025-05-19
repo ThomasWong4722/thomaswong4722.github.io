@@ -8,6 +8,7 @@ Drawlist.forEach(item => {
 
 const card = document.querySelector(".card__inner");
 let Fb=0
+
 card.addEventListener("click", function (e) {
   if (Fb === 0) {
     Fb = 1;
@@ -17,7 +18,9 @@ card.addEventListener("click", function (e) {
     Fb = 0; // You can change this to whatever you need
 }
   
- card.classList.toggle('is-flipped');
+setTimeout(() => {
+        card.classList.toggle('is-flipped');
+    }, 250); 
 });
 
 

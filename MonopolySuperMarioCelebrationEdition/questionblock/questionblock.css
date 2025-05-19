@@ -46,10 +46,4 @@
             transform: scale(0.9);
         }
 
-        .iactive{
-            transform: scale(0.9);
-        }
 
-        .iinactive{
-            transform: scale(1);
-        }

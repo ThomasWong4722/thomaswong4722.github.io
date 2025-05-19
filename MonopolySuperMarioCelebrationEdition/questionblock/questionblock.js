@@ -14,3 +14,6 @@ const sounds = ["sound/1.mp3", "sound/2.mp3", "sound/3.mp3", "sound/4.mp3", "sou
                 audioPlaying = false; // Reset flag when sound ends
             });
         });
+        document.getElementById("image").addEventListener("touchstart",()=>{
+            document.getElementById('image').className = 'iactive'
+        })

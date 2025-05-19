@@ -43,10 +43,9 @@
         }
 
         .image-co:active{
-            transform: scale(0.8);
+            transform: scale(0.9);
         }
 
-        .image-co:hover{
-             transform: scale(0.9);
-
+        .iactive{
+            transform: scale(0.9);
         }

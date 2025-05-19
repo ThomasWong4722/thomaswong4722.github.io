@@ -1,3 +1,12 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(setofont.ttf);
+}
+
+* {
+   font-family: myFirstFont;
+}
+
 body {
     background-color: #FFF; /* Set background color */
     display: flex;
@@ -93,3 +102,5 @@ td, th {
 .bu{
     font-size:3vh
 }
+
+
